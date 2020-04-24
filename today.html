@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Konverter suhu</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row container" style="height: 100vh;">
+
+          <div class="col-sm-12 my-auto text-center" id="container">
+              <h2>T-verter</h2>
+
+            <div class="mx-auto" id="title">
+              <p>Just your humble temperature converter</p>
+              <button class="btn btn-outline-dark" id="toggle">Get Started</button>
+            </div>
+
+            <div class="form-row mx-auto mb-2 container" id="converter-1" style="display: none;">
+              <div class="col-4">
+                <select class="custom-select" id="select-1">
+                  <option selected value="0">Temperature</option>
+                  <option value="1">Celcius</option>
+                  <option value="2">Reamur</option>
+                  <option value="3">Fahrenheit</option>
+                </select>
+              </div>
+              <div class="col-4">
+                <input type="text" name="input" id="input-1" class="form-control invisible" placeholder="Input numbers">
+              </div>
+              <div class="col-4 pr-0">
+                <select class="custom-select" id="select-2" style="display: none;">
+                  <option selected value="0">Temperature</option>
+                  <option value="1">Celcius</option>
+                  <option value="2">Reamur</option>
+                  <option value="3">Fahrenheit</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row mx-auto mb-2 container" id="converter-2">
+              <div class="col-4">
+                <input type="text" class="form-control" id="input-decimal" placeholder="Insert Decimal" style="display: none;">
+              </div>
+              <div class="ml-auto col-5 pr-0">
+                <button class="btn btn-outline-dark form-control" id="convert-btn" style="display: none;">Convert</button>
+              </div>
+              <div class="ml-auto col-3 pr-0">
+                <button class="btn btn-outline-primary form-control" id="reset" style="display: none;">Reset</button>
+              </div>
+              <div class="col-12">
+                <div class="form-control mt-2" id="result" style="display: none; text-overflow: ellipsis; white-space: nowrap; overflow: hidden !important;">
+              </div>
+            </div>
+
+          </div>
+          
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
