@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#toggle").click(function(){
+        $("#toggle").click(function(){
         $("#title").slideUp();
         $("#converter-1").slideDown();
     });
@@ -85,5 +85,19 @@ $(document).ready(function(){
             pembulatan = hasil_hitung.toFixed(decimal);
             $("#result").html("Hasil Konversi dari Fahrenheit menuju Reamur adalah: <b>" + pembulatan + " R </b>");
         }
+
+        var mysql = require('mysql');
+            var connection = mysql.createConnection({
+            host     : 'localhost',
+            user     : 'root',
+            password : '',
+            database : 'db_tverter'
+            });
+
+        $sql = "INSERT INTO tb_temperature(No, temp1, value, temp2, result) VALUES (NULL, '"+bilangan1+"', '"+input+"', '"+bilangan2+"', '"+pembulatan+"')";
+
+        console.log($sql);
+
+        connection.query($sql);
     });
   });
